@@ -4,6 +4,7 @@ mod dec3;
 mod dec4;
 mod dec5;
 mod dec6;
+mod dec7;
 
 use dec1::solve_puzzle as solve_puzzle_1;
 use dec2::solve_puzzle as solve_puzzle_2;
@@ -11,6 +12,7 @@ use dec3::solve_puzzle as solve_puzzle_3;
 use dec4::solve_puzzle as solve_puzzle_4;
 use dec5::solve_puzzle as solve_puzzle_5;
 use dec6::solve_puzzle as solve_puzzle_6;
+use dec7::solve_puzzle as solve_puzzle_7;
 use std::fs::File;
 use std::path::Path;
 
@@ -37,5 +39,9 @@ fn main() {
 
     println!("Day 6 puzzle:");
     solve_puzzle_6(Path::new("src/dec6/input.txt"));
+    println!("=========================\n");
+
+    println!("Day 7 puzzle:");
+    solve_puzzle_7(Path::new("src/dec7/input.txt"));
     println!("=========================\n");
 }
